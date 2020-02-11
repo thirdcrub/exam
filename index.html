@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyBookList App</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- bootswatch -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <h1 class="display-4 text-center">
+      <i class="fas fa-book-open text-primary"></i> 610612014 <span class="text-primary">Bookmarks</span></h1>
+    <form id="bookmark-form">
+      <div class="form-group">
+        <label for="">Site Name</label>
+        <input type="text" id="name" class="form-control">
+        <span class="e" id="na"></span>
+      </div>
+      <div class="form-group">
+        <label for="">URL</label>
+        <input type="text" id="url" class="form-control">
+        <span class="e" id="uuurl"></span>
+      </div>
+
+      <button type="submit" id="submit" value="Add Bookmark" class="btn btn-primary btn-block">Add Bookmark</button> 
+    </form>
+    <p class="e" id="se"></p>
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>Site Name</th>
+          <th>URL</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody id="bookmark-list"></tbody>
+      
+
+    </table>
+  </div>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="ja.js"></script>
+
+</body>
+
+</html>
